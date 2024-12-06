@@ -1,0 +1,152 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.material-symbols-outlined {
+  vertical-align: bottom;
+}
+
+.header, .details {
+  flex: 1;
+}
+
+h2  {
+  color: #445558;
+  margin-top: 20px;
+}
+
+p {
+  color: #7E8B8E;
+}
+
+b {
+  color: #445558;
+}
+
+li {
+  color: #7E8B8E;
+}
+
+.top-bar {
+    background-image: linear-gradient(300deg, #445558,#7E8B8E, #B8C1C3, #F2F7F9);
+    height: 120px;
+    animation: gradient-animation 20s ease infinite  ;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.myname {
+    text-align: center;
+    color: #445558;
+    position: relative;
+    bottom: 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.contact {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+}
+.contact li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    color: #445558;
+  }
+
+
+  .Column {
+    float: left;
+    padding: 10px;
+    height: auto;
+  }
+
+  .material-symbols-outlined {
+    margin-right: 5px;
+    color: #445558;
+  }
+  .left li {
+    list-style: none;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    color: #7E8B8E;
+  }
+
+  .left  {
+    width: 35%;
+  }
+  
+  .right {
+    width: 65%;
+    padding-right: 20px;
+}
+
+.Details:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+table {
+  width: 100%;
+  color: #7E8B8E;
+}
+
+
+
+.Date {
+  float:right;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #f8f8f8;
+
+}
+
+@media (max-width: 768px) {
+  .Column {
+    width: 100%;
+    float: none;
+  }
+
+  .left, .right {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
